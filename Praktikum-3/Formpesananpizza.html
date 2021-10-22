@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form pemesanan</title>
+</head>
+<body>
+    <h1> <strong> Delivery Bobaku </h1> </strong> <br>
+    <p> Sekarang bobaku sudah tersedia pemesanan dari rumah. Gak perlu ribet keluar lagi! pesan sekarang! </p>
+    <form action="Hasilpesananpizza.html" method="post">
+        <fieldset>
+            <ul>
+                <li>
+                <label for=”nama”> Nama Pemesan : </label>
+                <input id=”nama” name=”namamu” />
+                </li>
+                <br>
+                <li>
+                <label for=”alamat”> Alamat Lengkap : </label>
+                <textarea id=”alamat” name=”alamat”></textarea>
+                </li> <br>
+                <li>
+                <label for=”nomorhp”> Nomor Handphone : </label>
+                <input id=”nomorhp” name=”nomorhpmu” />
+                </li> <br>
+                <li>
+                <label for=”e-mail”> Alamat E-mail : </label>
+                <input id=”e-mail” name=”e-mail” />
+                </li> <br>
+                <li>
+                <label for="deskripsipesanan"> Deskripsi Pesanan : </label>
+                <input id="deskripsipesanan" name="deskripsipesanan"/>
+                </li> <br>
+
+            <h3>Varian rasa</h3>
+            <p>Pilih 1 rasa: </p>
+                <li>
+                <input type="radio" id="Choco latte" name="drink1" value="Choco latte">
+                <label for="Choco latte">Choco latte</label><br>
+                <input type="radio" id="Greentea matcha" name="drink2" value="Greentea matcha">
+                <label for="Greentea matcha">Greentea matcha</label><br>
+                <input type="radio" id="Cookies n cream" name="drink3" value="Cookies n cream">
+                <label for="Cookies n cream">Cookies n cream</label><br>
+                <input type="radio" id="Red velvet" name="drink4" value="Red velvet">
+                <label for="Red velvet">Red velvet</label><br>
+                </li> <br>
+
+            <h3>Topping</h3>
+            <p>Pilihan topping(boleh lebih dari 1): </p>
+                <li>
+                <input type="checkbox" id="Boba" name="topping1" value="Boba">
+                <label for="Boba">Boba</label><br>
+                <input type="checkbox" id="Jelly" name="topping2" value="Jelly">
+                <label for="Jelly">Jelly</label><br>
+                <input type="checkbox" id="Cream cheese" name="topping3" value="Cream cheese">
+                <label for="Cream cheese">Cream cheese</label><br>
+                <input type="checkbox" id="Messes" name="topping4" value="Messes">
+                <label for="Messes">Messes</label><br>
+                <input type="checkbox" id="Chocochip" id="topping5" value="Chocochip">
+                <label for="Chocochip">Chocochip</label><br>
+                <input type="checkbox" id="Oreo" name="topping6" value="Oreo">
+                <label for="Oreo">Oreo</label><br>
+                <input type="checkbox" id="Biskuit" name="topping7" value="Biskuit">
+                <label for="Biskuit">Biskuit</label><br>
+                </li> <br>
+                <li>
+            <label>Jumlah Pesanan <input type="number" name="Pesanan" min="1" max="10"></label>
+
+            <p><input type="submit" value="Pesan"> <input type="reset" value="Ulang pemesanan"></p>
+                </li> <br>
+            </ul>    
+        </fieldset>
+    </form>
+
+</body>
+</html>

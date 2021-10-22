@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; 
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+a {
+  color: #2196F3;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+</style>
+</head>
+<body>
+
+<h2>Pesan sekarang</h2>
+<p>Sweater all size</p>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="nama barang"><i class="fa fa-user"></i>Nama Barang : Sweater</label>
+            <input type="text" list="Barang" name="nama barang">
+            <datalist id="Barang">
+                <option value="Sweater bahan premium"></option>
+                <option value="Sweater bahan biasa"></option>
+            </datalist>
+            <label for="warna">Warna</label>
+            <input type="text" list="warna" name="warna">
+            <datalist id="warna">
+                <option value="Maroon"></option>
+                <option value="Hitam"></option>
+                <option value="Abu-abu"></option>
+                <option value="Cream"></option>
+                <option value="Coklat"></option>
+                <option value="pink"></option>
+            </datalist>
+            <label for="bank">Bank</label>
+            <input type="text" list="bank" name="bank">
+            <datalist id="bank">
+                <option value="BCA"></option>
+                <option value="BNI"></option>
+                <option value="Mandiri"></option>
+                <option value="BRI"></option>
+            </datalist>
+            <label for="nama">Nama Account</label>
+            <input type="text" id="Nama Account" name="Nama Account">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email">
+            <label for="adr"><i class="fa fa-address-card-o"></i>Alamat</label>
+            <input type="text" id="adr" name="alamat">
+
+            <div class="row">
+              <div class="col-50">
+                
+              </div>
+              <div class="col-50">
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Alamat sesuai dengan pemesanan
+        </label>
+        <input type="submit" value="Lanjut Pemesanan" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <img src="sweater.jfif">
+      <hr>
+      <p>Harga <span class="price" style="color:black"><b>89.000</b></span></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
