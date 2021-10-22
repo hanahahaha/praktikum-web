@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title>Your cart</title>
+  <style>
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1000px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: gainsboro;
+}
+
+nav {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+}
+
+nav .logo {
+  margin-right: 50px;
+}
+
+nav .icon-ul {
+  margin-left: auto;
+}
+
+nav .cart {
+  display: flex;
+  gap: 5px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+main {
+  width: 60%;
+}
+
+
+
+.col-head {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+aside {
+  width: 40%;
+  background-color: rgb(55, 235, 211);
+  padding: 10px;
+  display: grid;
+  align-items: center;
+}
+
+aside table {
+  width: 100%;
+}
+
+aside table tr td {
+  padding: 10px 0;
+}
+
+.btn-checkout {
+  display: flex;
+  justify-content: center;
+  background-color: turquoise;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+footer {
+  margin-top: 100px;
+  border-top: 1px solid black;
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+}
+
+footer .baris, .input-subscribe {
+  display: flex;
+}
+
+footer .baris {
+  gap: 5px;
+}
+
+footer a:last-child {
+  margin-left: auto;
+}
+
+footer .input-subscribe {
+  margin-left: auto;
+}
+
+footer .input-subscribe p {
+  background-color: blanchedalmond;
+}
+
+footer .input-subscribe input::placeholder {
+  font-weight: bolder;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav> 
+      <ul class="logo">
+        <li>
+          <a href="">Nama Situs</a>
+        </li>
+      </ul>
+
+      <ul class="menu-ul"> 
+        <li> <!-- Home --> 
+          <a href="/">Halaman 1</a> |
+        </li> 
+        <li> <!--- Current -->
+          <a href="/events">Halaman 2</a> |
+        </li> 
+        <li> <!-- Contact -->
+          <a href="/contact">Halaman 3</a>
+        </li> 
+      </ul> 
+
+      <ul class="icon-ul">
+        <li>
+          <i class="bi bi-search"></i>
+        </li>
+        <li class="cart">
+          <i class="bi bi-cart"></i>
+          <p>Keranjang (2)</p>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main>
+      <p>Order 22/10/2021</p>
+      <h1>Terima Kasih!</h1>
+      <hr><br>
+
+      <p>Pesanan anda telah kami terima.</p>
+      <br>
+      <h4>Kami telah menerima pesanan anda, pesanan akan kami kemas dan kirim segera.</h4>
+      <hr><br>
+
+      <h2>Data Pesanan</h2><br>
+
+      <p><strong>Alamat Pengiriman</strong></p>
+      <p>Ham wonjin</p>
+      <p>Distrik Eunpyeong, Seoul, Korea Selatan</p><br>
+      <p><strong>Alamat Tagihan</strong></p>
+      <p>Ham wonjin</p>
+      <p>Distrik Eunpyeong Seoul, Korea Selatan</p><br>
+      <p><strong>Metode Pembayaran</strong></p>
+      <p>Pengiriman akan tiba dalam 3-6 hari</p>
+      <i class="bi bi-badge-ar-fill">IDR 67.000</i>
+      <hr>
+    </main>
+
+    <aside>
+      <h2>Pesanan ( 1 barang )</h2>
+      <table>
+        <tr>
+          <td>Harga Barang</td>
+          <td align="right">55.000</td>
+        </tr>
+        <tr>
+          <td>Ongkos kirim</td>
+          <td align="right">10.000</td>
+        </tr>
+        <tr>
+          <td>Pajak</td>
+          <td align="right">2.000</td>
+        </tr>
+        <tr>
+            <label for="diskon">Kode Voucher</label>
+            <input type="text" id="diskon" name="nama">
+            <p><input type="submit"></input></p>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td align="right">67.000</td>
+        </tr>
+      </table>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="baris">
+      <a href="">Nama Situs</a>
+      <a href="">kategory</a> |
+      <a href="">kategory</a> |
+      <a href="">kategory</a> 
+      <a href="">Ingin bergabung menjadi reseller? yuk join!</a>
+    </div>
+    <div class="baris">
+      <i class="bi bi-badge-ar-fill"></i>
+      <i class="bi bi-badge-ar-fill"></i>
+      <i class="bi bi-badge-ar-fill"></i>
+      <div class="input-subscribe" >
+        <input type="email" id= "email" name="email" placeholder="Masukkan Email">
+        <p><input type="submit"></p>
+        
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
