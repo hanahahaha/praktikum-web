@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tugas 6.2</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: row;
+        margin: 0;
+      }
+      .box1 {
+        background-color: #8e9aaf;
+        flex: 1;
+      }
+      .box2 {
+        display: flex;
+        flex-direction: column;
+        flex: 5;
+      }
+      .content {
+        display: flex;
+        flex-direction: row;
+      }
+      .content > article {
+        flex: 3;
+        min-height: 60vh;
+        background-color: #efd3d7;
+      }
+      .content > aside {
+        background-color: #dee2ff;
+        flex: 1;
+      }
+      header,
+      footer {
+        background-color: #cbc0d3;
+        height: 20vh;
+      }
+      header,
+      footer,
+      article,
+      nav,
+      aside {
+        padding: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="box1">Nav</nav>
+    <div class="box2">
+      <header>Header</header>
+      <main class="content">
+        <article>Article</article>
+        <aside>Aside</aside>
+      </main>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
